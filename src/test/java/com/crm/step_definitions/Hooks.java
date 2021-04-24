@@ -4,6 +4,10 @@ import com.crm.utilities.Driver;
 import io.cucumber.java.*;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.util.concurrent.TimeUnit;
 
 public class Hooks {
 
@@ -16,9 +20,6 @@ public class Hooks {
     public void setUpDatabaseConnection(){
         System.out.println("--------> BEFORE ANNOTATION: DB CONNECTION CREATED <------");
     }
-
-
-
 
     @After(order = 1)
     public void tearDownScenario(Scenario scenario) throws  Exception{
@@ -45,12 +46,6 @@ public class Hooks {
         Driver.closeDriver();
 
     }
-
-
-
-
-
-
 
     @After(value = "@db", order = 2 )
     public void tearDownDatabaseConnection(){
