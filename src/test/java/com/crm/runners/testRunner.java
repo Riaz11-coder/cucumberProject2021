@@ -10,9 +10,9 @@ import org.junit.runner.RunWith;
                 "rerun:target/rerun.txt"
         },
         features = "src/test/resources/features",
-        glue = "btx24/crm/step_definitions",
+        glue = "com/crm/step_definitions",
         dryRun = false,
-        tags = "@mess"
+        tags = "@scenario_outline"
 )
 public class testRunner {
 }

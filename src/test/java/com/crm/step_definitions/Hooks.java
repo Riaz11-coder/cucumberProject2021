@@ -1,15 +1,27 @@
 package com.crm.step_definitions;
 
+import com.crm.utilities.ConfigurationReader;
 import com.crm.utilities.Driver;
 import io.cucumber.java.*;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.concurrent.TimeUnit;
 
 public class Hooks {
 
     @Before(order = 2)
     public void setUpScenario(){
         System.out.println("-----> Before annotation: Setting up browser");
+
+
+
+
+
     }
 
     @Before(value = "@db", order = 1)
