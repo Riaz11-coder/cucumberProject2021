@@ -17,11 +17,6 @@ public class Hooks {
     @Before(order = 2)
     public void setUpScenario(){
         System.out.println("-----> Before annotation: Setting up browser");
-
-
-
-
-
     }
 
     @Before(value = "@db", order = 1)
@@ -34,10 +29,10 @@ public class Hooks {
 
     @After(order = 1)
     public void tearDownScenario(Scenario scenario) throws  Exception{
-        //System.out.println("-----> After annotation: Closing browser");
-        //System.out.println("scenario.getName() = " + scenario.getName());
-        //System.out.println("scenario.getSourceTagNames() = " + scenario.getSourceTagNames());
-        //System.out.println("scenario.isFailed() = " + scenario.isFailed());
+        System.out.println("-----> After annotation: Closing browser");
+        System.out.println("scenario.getName() = " + scenario.getName());
+        System.out.println("scenario.getSourceTagNames() = " + scenario.getSourceTagNames());
+        System.out.println("scenario.isFailed() = " + scenario.isFailed());
 
 
         //#1 we need to take a screen shot using SELENIUM -->

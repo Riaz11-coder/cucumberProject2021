@@ -13,28 +13,6 @@ public class loginStepDefinitions {
     loginPage lp = new loginPage();
 
 
-//    @Given("User is on environment login page")
-//    public void userIsOnEnvironmentLoginPage() {
-//
-//        driver.get(ConfigurationReader.getProperty("url"));
-//
-//    }
-//
-//    @Then("User should be able to see Authorization title")
-//    public void userShouldBeAbleToSeeAuthorizationTitle() {
-//
-//        String actualTitle = lp.authorizationTitle.getText();
-//        String expectedTitle = "Authorization";
-//
-//        System.out.println("Actual Title: "+actualTitle);
-//        System.out.println("Exepcetd Title: "+expectedTitle);
-//
-//        System.out.println(actualTitle.equals(expectedTitle));
-//        Assert.assertEquals(actualTitle,expectedTitle);
-//    }
-//
-
-
     @Given("User is on login page")
     public void userIsOnLoginPage() {
 

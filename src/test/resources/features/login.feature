@@ -1,25 +1,23 @@
 Feature: login feature
   As a user I should be able to login with the proper credentials
 
-    #Background:
-    #Given User is on environment login page
-    #Then User should be able to see Authorization title
+
 
   @Scenario_1
   Scenario: Login as helpDesk
-    Given User is on login Page
-    When User logs in as helpDesk
+    Given User is on login page
+    When User enters "<username>" and "<password>"
     Then User should be able to see Activity Stream page title
 
   @Scenario_2
   Scenario: Login as marketing
-    Given User is on login Page
-    When User logs in as marketing
+    Given User is on login page
+    When User enters "<username>" and "<password>"
     Then User should be able to see Activity Stream page title
   @Scenario_3
   Scenario: Login as humanResources
-    Given User is on login Page
-    When User logs in as HR
+    Given User is on login page
+    When User enters "<username>" and "<password>"
     Then User should be able to see Activity Stream page title
 
     @scenario_outline

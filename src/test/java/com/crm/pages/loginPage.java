@@ -27,6 +27,12 @@ public class loginPage {
     @FindBy(id = "pagetitle")
     public WebElement activityStream;
 
+    @FindBy(css = "span[id='user-name']")
+    public WebElement userProfileTab;
+
+    @FindBy(xpath = "//*[@id='popup-window-content-menu-popup-user-menu']/div/div/a[3]/span[2]")
+    public WebElement logoutButton;
+
     public void login(String username, String password){
 
         userName.sendKeys(username);

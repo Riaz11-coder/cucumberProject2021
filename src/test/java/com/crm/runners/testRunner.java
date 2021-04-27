@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com/crm/step_definitions",
         dryRun = false,
-        tags = "@scenario_outline"
+        tags = "@Scenario_employees"
 )
 public class testRunner {
 }
