@@ -41,9 +41,9 @@ public class employeesStepDefinitions {
 
         String actual = emp.messageText.getText();
         System.out.println("Actual = "+actual);
-        String expected = emp.messageText.getText();
+        String expected = "Hello, this is a Test";
         System.out.println("Expected = "+expected);
-        Assert.assertTrue(expected.contains("Hello, this is a Test"));
+        Assert.assertTrue(actual.contains(expected));
     }
 
 }
