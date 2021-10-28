@@ -33,9 +33,9 @@
                         <include>**/*testRunner*.java</include>
                                              <include>**/FailedTestRunner.java</include>
                     </includes>
-                    <parallel>methods</parallel>
-                    <threadCount>4</threadCount>
-                    <perCoreThreadCount>false</perCoreThreadCount>
+<!--                    <parallel>methods</parallel>-->
+<!--                    <threadCount>4</threadCount>-->
+<!--                    <perCoreThreadCount>false</perCoreThreadCount>-->
 
                 </configuration>
 
