@@ -30,15 +30,12 @@
                 <version>3.0.0-M5</version>
                 <configuration>
                     <includes>
-                        <include>**/*ParallelRunner*.java</include>
-                        <!--                       <include>**/FailedTestRunner.java</include>-->
+                        <include>**/*testRunner*.java</include>
+                                             <include>**/FailedTestRunner.java</include>
                     </includes>
-                    <testFailureIgnore>true</testFailureIgnore>
-                    <runOrder>alphabetical</runOrder>
                     <parallel>methods</parallel>
-                    <threadCount>3</threadCount>
+                    <threadCount>4</threadCount>
                     <perCoreThreadCount>false</perCoreThreadCount>
-                    <forkCount>2C</forkCount>
 
                 </configuration>
 

@@ -7,12 +7,16 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"html:target/cucumber-report.html",
                 "json:target/cucumber.json",
-                "rerun:target/rerun.txt"
+                "rerun:target/rerun.txt",
+                "pretty"
+
+
         },
         features = "src/test/resources/features",
         glue = "com/crm/step_definitions",
         dryRun = false,
-        tags = "@Scenario_employees"
+        tags = ""
+
 )
 public class testRunner {
 }

@@ -7,7 +7,8 @@ Feature: File Upload feature
     Then User should see Activity Stream page title
 
 
-    @Scenario_fileUpload
+
+    @smoke_test
     Scenario: User is uploading a file
       When User clicks the More tab
       When  User selects the Appreciation module

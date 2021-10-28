@@ -4,7 +4,6 @@ import com.crm.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import sun.jvm.hotspot.debugger.Page;
 
 public class calendarPage {
 
@@ -30,7 +29,7 @@ public class calendarPage {
     @FindBy(css = "input[name = 'date_to']")
     public WebElement dateTo;
 
-    @FindBy(css = "a[class = 'bx-calendar-top-month']")
+    @FindBy(xpath = "/html/body/div[10]/div/div/div[1]/span/a[1]")
     public WebElement calendarMonth;
 
     @FindBy(css = "a[class = 'bx-calendar-top-year']")
@@ -92,8 +91,6 @@ public class calendarPage {
     @FindBy(css = "input[name = 'time_to']")
     public WebElement timeTo;
 
-    @FindBy(id = "calendar_slider_774975_rrule_type")
-    public WebElement repeatDropDown;
 
     @FindBy(id = "calendar_slider_774975_location_wrap")
     public WebElement locationDropDown;
@@ -116,6 +113,26 @@ public class calendarPage {
 
     @FindBy(css = "input[id='calendar_slider_323539_date_from']")
     public WebElement calendarBlockTwo;
+
+    @FindBy(css = "a[data-date = '1650412800000']")
+    public WebElement april20;
+
+    @FindBy(css = "input[class='bxc-cus-sel']")
+    public WebElement hour;
+
+    @FindBy(css = "input[title='Minutes']")
+    public WebElement minutes;
+
+    @FindBy(css = "select[name = 'EVENT_RRULE[FREQ]']")
+    public WebElement repeatDropDown;
+
+   @FindBy(css = "input[class='calendar-field calendar-field-select']")
+    public WebElement location;
+
+
+
+
+
 
 
 }

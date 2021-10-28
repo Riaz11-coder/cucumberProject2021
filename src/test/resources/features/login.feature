@@ -20,7 +20,7 @@ Feature: login feature
     When User enters "<username>" and "<password>"
     Then User should be able to see Activity Stream page title
 
-    @scenario_outline
+    @smoke_test
     Scenario Outline: Login using different credentials <username>
     Given User is on login page
     When User enters "<username>" and "<password>"

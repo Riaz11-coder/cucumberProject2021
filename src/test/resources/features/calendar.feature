@@ -5,7 +5,7 @@ Feature: Add Calendar Events
     Given User is on the login page
     When User enters "<username>" & "<password>"
     Then User should see Activity Stream page title
-
+    @Scenario_calendar
     Scenario: User adds an event to the Calendar
       When User selects Calendar tab
       And User clicks the Add button
