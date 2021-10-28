@@ -1,16 +1,11 @@
 package com.crm.step_definitions;
 
-import com.crm.utilities.ConfigurationReader;
+
 import com.crm.utilities.Driver;
 import io.cucumber.java.*;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.concurrent.TimeUnit;
 
 public class Hooks {
 
@@ -23,9 +18,6 @@ public class Hooks {
     public void setUpDatabaseConnection(){
         System.out.println("--------> BEFORE ANNOTATION: DB CONNECTION CREATED <------");
     }
-
-
-
 
     @After(order = 1)
     public void tearDownScenario(Scenario scenario) throws  Exception{
@@ -52,12 +44,6 @@ public class Hooks {
         Driver.closeDriver();
 
     }
-
-
-
-
-
-
 
     @After(value = "@db", order = 2 )
     public void tearDownDatabaseConnection(){

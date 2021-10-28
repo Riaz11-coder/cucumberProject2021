@@ -1,3 +1,4 @@
+
 Feature: login feature
   As a user I should be able to login with the proper credentials
 
@@ -31,7 +32,3 @@ Feature: login feature
       |helpdesk5@cybertekschool.com |UserUser|
       |marketing5@cybertekschool.com|UserUser|
       |hr5@cybertekschool.com       |UserUser|
-
-
-
-
